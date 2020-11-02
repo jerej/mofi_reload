@@ -52,6 +52,6 @@ response = mofi.get(
     f"https://192.168.10.1{base_path}/quick/system/reboot", params={"reboot": 1}
 )
 if response.status_code == requests.codes.ok:
-    print("Mofi Router rebooting... Please wait 3 minutes.")
+    print("Mofi Router rebooting... Please wait 3 minutes.\n")
 else:
     mofi.raise_for_status()
